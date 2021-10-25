@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpController">
+   <children>
+      <GridPane layoutY="66.0" prefHeight="215.0" prefWidth="400.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="149.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="251.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Name">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label text="Password" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf1" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="tf2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label text="Email" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="TelePhone" GridPane.rowIndex="3">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="tf3" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="tf4" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+      <HBox alignment="TOP_CENTER" layoutY="299.0" prefHeight="46.0" prefWidth="400.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onClickSignUp" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: pink;" text="SighUp" />
+            <Button mnemonicParsing="false" onAction="#onClickBack" style="-fx-background-color: yellow;" text="Back">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" layoutY="14.0" prefHeight="62.0" prefWidth="400.0">
+         <children>
+            <Label text="SignUp" textFill="#a1194d">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
