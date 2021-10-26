@@ -28,7 +28,7 @@
       </HBox>
       <VBox alignment="TOP_CENTER" layoutX="14.0" layoutY="64.0" prefHeight="534.0" prefWidth="256.0" spacing="20.0" style="-fx-border-color: blue;">
          <children>
-            <Label text="학생 정보" textFill="#3120ee">
+            <Label text="사용자 정보" textFill="#3120ee">
                <font>
                   <Font name="HYHeadLine-Medium" size="24.0" />
                </font>
