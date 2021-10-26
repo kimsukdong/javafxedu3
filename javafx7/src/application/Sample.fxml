@@ -12,9 +12,9 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: cyan;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: cyan;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <children>
-      <GridPane layoutY="66.0" prefHeight="85.0" prefWidth="400.0">
+      <GridPane layoutY="104.0" prefHeight="93.0" prefWidth="400.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="149.0" />
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.0" minWidth="10.0" prefWidth="251.0" />
@@ -52,7 +52,7 @@
             </PasswordField>
          </children>
       </GridPane>
-      <HBox alignment="TOP_CENTER" layoutY="173.0" prefHeight="46.0" prefWidth="400.0">
+      <HBox alignment="TOP_CENTER" layoutX="7.0" layoutY="224.0" prefHeight="46.0" prefWidth="391.0">
          <children>
             <Button mnemonicParsing="false" onAction="#onClickLogin" style="-fx-background-color: #9b82ff;" text="로그인">
                <HBox.margin>
@@ -73,13 +73,22 @@
             </Button>
          </children>
       </HBox>
-      <HBox alignment="TOP_CENTER" layoutY="14.0" prefHeight="62.0" prefWidth="400.0">
+      <HBox alignment="CENTER" layoutX="3.0" layoutY="36.0" prefHeight="62.0" prefWidth="400.0">
          <children>
             <Label text="Login" textFill="#a1194d">
                <font>
                   <Font name="System Bold" size="25.0" />
                </font>
             </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="304.0" layoutY="14.0" prefHeight="29.0" prefWidth="94.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onClickManager" style="-fx-background-color: lightgreen;" text="관리자">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
          </children>
       </HBox>
    </children>
