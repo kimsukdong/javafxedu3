@@ -88,17 +88,17 @@
             </GridPane>
             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="388.0" style="-fx-background-color: #dcde62;">
                <children>
-                  <Button mnemonicParsing="false" onAction="#onClickLogin" prefHeight="35.0" prefWidth="87.0" style="-fx-background-color: #9b82ff;" text="로그인">
+                  <Button mnemonicParsing="false" onAction="#onClickLogin" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: #9b82ff;" text="로그인">
                      <HBox.margin>
-                        <Insets right="20.0" />
+                        <Insets left="10.0" right="20.0" />
                      </HBox.margin>
                      <font>
                         <Font size="15.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#onClickSignUp" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: pink;" text="SighUp">
+                  <Button mnemonicParsing="false" onAction="#onClickSignUp" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: pink;" text="SighUp">
                      <HBox.margin>
-                        <Insets left="20.0" />
+                        <Insets left="20.0" right="20.0" />
                      </HBox.margin>
                      <font>
                         <Font size="14.0" />
@@ -111,7 +111,7 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="388.0" style="-fx-background-color: #3a3b20;">
                <children>
-                  <Button mnemonicParsing="false" onAction="#onClickManage" prefHeight="30.0" prefWidth="87.0" style="-fx-background-color: lightgreen;" text="Manage">
+                  <Button fx:id="btn_Manager" disable="true" mnemonicParsing="false" onAction="#onClickManage" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: lightgreen;" text="Manage">
                      <HBox.margin>
                         <Insets right="20.0" />
                      </HBox.margin>
@@ -119,7 +119,7 @@
                         <Font size="14.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#onClickCancel" prefHeight="30.0" prefWidth="72.0" style="-fx-background-color: yellow;" text="종료">
+                  <Button mnemonicParsing="false" onAction="#onClickCancel" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: yellow;" text="종료">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>

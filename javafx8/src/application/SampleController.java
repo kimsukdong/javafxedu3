@@ -12,6 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
@@ -25,6 +26,9 @@ public class SampleController {
 	Scene scene;
 
 	
+    @FXML
+    private Button btn_Manager;
+    
     @FXML
     private TextField tf1;
 
@@ -66,7 +70,7 @@ public class SampleController {
     }
     
     @FXML
-    void onClickLogin(ActionEvent event) throws IOException {  	
+    void onClickLogin(ActionEvent event) throws IOException, InterruptedException {  	
        	String uname = tf1.getText();
     	String pass = tf2.getText();
     	
@@ -82,6 +86,10 @@ public class SampleController {
 				
 				srs = pst.executeQuery();
 				if(srs.next()) {
+					if(uname.equals("admin")) {
+						btn_Manager.setDisable(false);
+						Thread.sleep(1000);
+					}
 					root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
 					scene = new Scene(root,600,400);
 					Main.primaryStage.setScene(scene);
