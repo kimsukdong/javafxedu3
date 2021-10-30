@@ -21,19 +21,19 @@ public class SampleController {
 	Connection conn = null;
 	ResultSet srs = null;
 	PreparedStatement pst = null;
-	
+
 	AnchorPane root;
 	Scene scene;
 
-	
-    @FXML
-    private Button btn_Manager;
-    
-    @FXML
-    private TextField tf1;
 
-    @FXML
-    private TextField tf2;
+	@FXML
+	private Button btn_Manager;
+
+	@FXML
+	private TextField tf1;
+
+	@FXML
+	private TextField tf2;
 
 	@FXML
 	private void initialize() {
@@ -45,55 +45,55 @@ public class SampleController {
 			e.printStackTrace();
 		}
 	}
-	 
-    @FXML
-    void onClickCancel(ActionEvent event) {
-    	System.exit(0);
-    } 
-    
-    @FXML
-    void onClickSignUp(ActionEvent event) throws IOException {
+
+	@FXML
+	void onClickCancel(ActionEvent event) {
+		System.exit(0);
+	} 
+
+	@FXML
+	void onClickSignUp(ActionEvent event) throws IOException {
 		root = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
 		scene = new Scene(root,400,400);
 		Main.primaryStage.setScene(scene);
 		Main.primaryStage.show();
 		Main.primaryStage.setTitle("SignUp");
-    }
-    
-    @FXML
-    void onClickManage(ActionEvent event) throws IOException {
+	}
+
+	@FXML
+	void onClickManage(ActionEvent event) throws IOException {
 		root = FXMLLoader.load(getClass().getResource("Manage.fxml"));
 		scene = new Scene(root,800,600);
 		Main.primaryStage.setScene(scene);
 		Main.primaryStage.show();
 		Main.primaryStage.setTitle("Manage");
-    }
-    
-    @FXML
-    void onClickLogin(ActionEvent event) throws IOException, InterruptedException {  	
-       	String uname = tf1.getText();
-    	String pass = tf2.getText();
-    	
+	}
 
-    	if(uname.equals("") && pass.equals(""))
-    	{
-    		JOptionPane.showMessageDialog(null, "UserName or Password Blank");    		    		
-    	} else 
-    	{
+	@FXML
+	void onClickLogin(ActionEvent event) throws IOException, InterruptedException {  	
+		String uname = tf1.getText();
+		String pass = tf2.getText();
+
+
+		if(uname.equals("") && pass.equals(""))
+		{
+			JOptionPane.showMessageDialog(null, "UserName or Password Blank");    		    		
+		} else 
+		{
 			try {
 				pst.setString(1, uname);
 				pst.setString(2, pass);
-				
+
 				srs = pst.executeQuery();
 				if(srs.next()) {
 					if(uname.equals("admin")) {
 						btn_Manager.setDisable(false);
 					} else {
-					root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
-					scene = new Scene(root,600,400);
-					Main.primaryStage.setScene(scene);
-					Main.primaryStage.show();
-					Main.primaryStage.setTitle("Data Processing . . .");  
+						root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
+						scene = new Scene(root,600,400);
+						Main.primaryStage.setScene(scene);
+						Main.primaryStage.show();
+						Main.primaryStage.setTitle("Data Processing . . .");  
 					}
 				} else
 				{
@@ -102,12 +102,12 @@ public class SampleController {
 					tf2.setText("");
 					tf1.requestFocus();
 				}
-				
+
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-    	}
-    }
+		}
+	}
 
 }
