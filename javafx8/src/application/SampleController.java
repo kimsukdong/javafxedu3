@@ -88,13 +88,13 @@ public class SampleController {
 				if(srs.next()) {
 					if(uname.equals("admin")) {
 						btn_Manager.setDisable(false);
-						Thread.sleep(1000);
-					}
+					} else {
 					root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
 					scene = new Scene(root,600,400);
 					Main.primaryStage.setScene(scene);
 					Main.primaryStage.show();
 					Main.primaryStage.setTitle("Data Processing . . .");  
+					}
 				} else
 				{
 					JOptionPane.showMessageDialog(null, "Login Failed");  
