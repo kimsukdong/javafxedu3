@@ -60,15 +60,15 @@
                         <Font name="HYHeadLine-Medium" size="18.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="txtpassword" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <TextField fx:id="txtemail" layoutX="96.0" layoutY="34.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField fx:id="txtphone" layoutX="96.0" layoutY="34.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtpassword" style="-fx-background-color: lightgrey;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtemail" layoutX="96.0" layoutY="34.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="txtphone" layoutX="96.0" layoutY="34.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                   <Label layoutX="10.0" layoutY="77.0" text="이름">
                      <font>
                         <Font name="HYHeadLine-Medium" size="18.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="txtname" layoutX="96.0" layoutY="77.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="txtname" layoutX="96.0" layoutY="77.0" style="-fx-background-color: lightgrey;" GridPane.columnIndex="1" />
                </children>
             </GridPane>
             <HBox prefHeight="91.0" prefWidth="239.0" spacing="10.0">
@@ -139,7 +139,7 @@
                </VBox.margin>
             </HBox>
             <Separator prefWidth="200.0" style="-fx-border-color: green;" />
-            <TableView fx:id="tableContent" onMouseClicked="#onMouseClicked" prefHeight="440.0" prefWidth="516.0">
+            <TableView fx:id="tableContent" onMouseClicked="#onMouseClicked" prefHeight="440.0" prefWidth="516.0" style="-fx-background-color: lightgrey;">
               <columns>
                 <TableColumn fx:id="col_name" prefWidth="107.0" text="이름" />
                 <TableColumn fx:id="col_password" prefWidth="108.0" text="패스워드" />

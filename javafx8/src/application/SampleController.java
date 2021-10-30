@@ -20,7 +20,9 @@ public class SampleController {
 	Connection conn = null;
 	ResultSet srs = null;
 	PreparedStatement pst = null;
-	Main main = new Main();
+	
+	AnchorPane root;
+	Scene scene;
 
 	
     @FXML
@@ -47,24 +49,24 @@ public class SampleController {
     
     @FXML
     void onClickSignUp(ActionEvent event) throws IOException {
-		AnchorPane root = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
-		Scene scene = new Scene(root,400,400);
-		main.primaryStage.setScene(scene);
-		main.primaryStage.show();
-		main.primaryStage.setTitle("SignUp");
+		root = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
+		scene = new Scene(root,400,400);
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
+		Main.primaryStage.setTitle("SignUp");
     }
     
     @FXML
     void onClickManage(ActionEvent event) throws IOException {
-		AnchorPane root = FXMLLoader.load(getClass().getResource("Manage.fxml"));
-		Scene scene = new Scene(root,800,600);
-		main.primaryStage.setScene(scene);
-		main.primaryStage.show();
-		main.primaryStage.setTitle("Manage");
+		root = FXMLLoader.load(getClass().getResource("Manage.fxml"));
+		scene = new Scene(root,800,600);
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
+		Main.primaryStage.setTitle("Manage");
     }
     
     @FXML
-    void onClickLogin(ActionEvent event) {  	
+    void onClickLogin(ActionEvent event) throws IOException {  	
        	String uname = tf1.getText();
     	String pass = tf2.getText();
     	
@@ -80,7 +82,11 @@ public class SampleController {
 				
 				srs = pst.executeQuery();
 				if(srs.next()) {
-					JOptionPane.showMessageDialog(null, "Login Success");  
+					root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
+					scene = new Scene(root,600,400);
+					Main.primaryStage.setScene(scene);
+					Main.primaryStage.show();
+					Main.primaryStage.setTitle("Data Processing . . .");  
 				} else
 				{
 					JOptionPane.showMessageDialog(null, "Login Failed");  
