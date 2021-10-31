@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1500.0" style="-fx-background-color: #cfe8c5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phone.controller.CafeMenuController">
+   <children>
+      <HBox alignment="TOP_RIGHT" layoutX="7.0" layoutY="17.0" prefHeight="48.0" prefWidth="1491.0" spacing="450.0" style="-fx-background-color: #375c4b;">
+         <children>
+            <Label text="커피. 케익 Menu" textFill="#fff4f4">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/OIP.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+      <VBox alignment="TOP_CENTER" layoutX="7.0" layoutY="77.0" prefHeight="510.0" prefWidth="577.0" style="-fx-border-color: green; -fx-background-color: #bdaa91;">
+         <children>
+            <Label text="커피 메뉴">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <GridPane prefHeight="481.0" prefWidth="378.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="166.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="83.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="73.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="0.0" prefWidth="39.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.0" minWidth="10.0" prefWidth="78.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.0" minWidth="10.0" prefWidth="22.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <CheckBox fx:id="c1" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="Today's coffee" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="c2" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="에스프레소 " GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="c3" layoutX="10.0" layoutY="148.0" mnemonicParsing="false" text="아메리카노 " GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="c4" layoutX="10.0" layoutY="208.0" mnemonicParsing="false" text="카페라테   " GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="c5" layoutX="10.0" layoutY="268.0" mnemonicParsing="false" text="카푸치노   " GridPane.rowIndex="5">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="c6" layoutX="10.0" layoutY="328.0" mnemonicParsing="false" text="카페모카   " GridPane.rowIndex="6">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="c7" layoutX="10.0" layoutY="388.0" mnemonicParsing="false" text="아포카토   " GridPane.rowIndex="7">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <TextField fx:id="txt_c1" prefHeight="22.0" prefWidth="30.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="txt_c2" layoutX="340.0" layoutY="89.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="txt_c31" layoutX="340.0" layoutY="149.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="txt_c32" layoutX="281.0" layoutY="209.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <TextField fx:id="txt_c41" layoutX="281.0" layoutY="209.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <TextField fx:id="txt_c42" layoutX="281.0" layoutY="269.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <TextField fx:id="txt_c7" layoutX="347.0" layoutY="269.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                  <TextField fx:id="txt_c62" layoutX="347.0" layoutY="269.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <TextField fx:id="txt_c61" layoutX="347.0" layoutY="269.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <TextField fx:id="txt_c52" layoutX="347.0" layoutY="269.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <TextField fx:id="txt_c51" layoutX="347.0" layoutY="269.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label text="Hot" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Iced" GridPane.columnIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="291.0" layoutY="31.0" text="Price" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="3,000" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="230.0" layoutY="91.0" text="3,000" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="230.0" layoutY="151.0" prefHeight="47.0" prefWidth="71.0" text="3,500 /4,000" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="197.0" layoutY="197.0" prefHeight="47.0" prefWidth="71.0" text="4,000 /4,500" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="197.0" layoutY="197.0" prefHeight="47.0" prefWidth="71.0" text="4,000 /4,500" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="197.0" layoutY="197.0" prefHeight="47.0" prefWidth="71.0" text="4,000 /4,500" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="197.0" layoutY="151.0" text="5,000" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#onClickB1" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button layoutX="255.0" layoutY="89.0" mnemonicParsing="false" onAction="#onClickB32" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                  <Button layoutX="303.0" layoutY="89.0" mnemonicParsing="false" onAction="#onClickB2" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button layoutX="374.0" layoutY="209.0" mnemonicParsing="false" onAction="#onClickB31" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Button layoutX="303.0" layoutY="209.0" mnemonicParsing="false" onAction="#onClickB41" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Button layoutX="303.0" layoutY="269.0" mnemonicParsing="false" onAction="#onClickB42" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                  <Button layoutX="303.0" layoutY="269.0" mnemonicParsing="false" onAction="#onClickB51" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Button layoutX="303.0" layoutY="329.0" mnemonicParsing="false" onAction="#onClickB52" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                  <Button layoutX="374.0" layoutY="329.0" mnemonicParsing="false" onAction="#onClickB61" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                  <Button layoutX="303.0" layoutY="389.0" mnemonicParsing="false" onAction="#onClickB62" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                  <Button layoutX="374.0" layoutY="389.0" mnemonicParsing="false" onAction="#onClickB7" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </GridPane>
+         </children></VBox>
+      <VBox alignment="TOP_CENTER" layoutX="594.0" layoutY="77.0" prefHeight="510.0" prefWidth="420.0" style="-fx-border-color: green; -fx-background-color: #b39f86;">
+         <children>
+            <Label text="Cake 메뉴" textFill="#fffab3">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <GridPane prefHeight="481.0" prefWidth="378.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="270.0" minWidth="10.0" prefWidth="141.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="54.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="80.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="28.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <CheckBox fx:id="k1" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="커피 케익" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k2" layoutX="10.0" layoutY="28.0" mnemonicParsing="false" text="크림 파이" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k3" layoutX="10.0" layoutY="148.0" mnemonicParsing="false" text="초코렛 케익" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k4" layoutX="10.0" layoutY="208.0" mnemonicParsing="false" text="치즈케익" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k5" layoutX="10.0" layoutY="268.0" mnemonicParsing="false" text="크로플" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="k6" layoutX="10.0" layoutY="328.0" mnemonicParsing="false" text="마카롱" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <TextField fx:id="txt_k1" prefHeight="22.0" prefWidth="30.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <TextField fx:id="txt_k2" layoutX="340.0" layoutY="89.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="txt_k3" layoutX="340.0" layoutY="149.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <TextField fx:id="txt_k4" layoutX="281.0" layoutY="209.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <TextField fx:id="txt_k6" layoutX="347.0" layoutY="269.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <TextField fx:id="txt_k5" layoutX="347.0" layoutY="269.0" prefHeight="22.0" prefWidth="113.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Label text="Order" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="291.0" layoutY="31.0" text="Price" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="4,500" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="230.0" layoutY="91.0" text="5,500" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="230.0" layoutY="151.0" prefHeight="47.0" prefWidth="71.0" text="5,000" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="197.0" layoutY="197.0" prefHeight="47.0" prefWidth="71.0" text="1,000" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="197.0" layoutY="197.0" prefHeight="47.0" prefWidth="71.0" text="7,000" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="197.0" layoutY="197.0" prefHeight="47.0" prefWidth="71.0" text="5,000" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#onClickK1" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button layoutX="381.0" layoutY="103.0" mnemonicParsing="false" onAction="#onClickK2" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Button layoutX="381.0" layoutY="172.0" mnemonicParsing="false" onAction="#onClickK3" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Button layoutX="381.0" layoutY="241.0" mnemonicParsing="false" onAction="#onClickK4" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                  <Button layoutX="381.0" layoutY="309.0" mnemonicParsing="false" onAction="#onClickK5" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                  <Button layoutX="381.0" layoutY="377.0" mnemonicParsing="false" onAction="#onClickK6" prefHeight="18.0" prefWidth="12.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </GridPane>
+         </children></VBox>
+      <VBox layoutX="1023.0" layoutY="75.0" prefHeight="723.0" prefWidth="475.0" spacing="10.0" style="-fx-border-color: green; -fx-background-color: #873d68;">
+         <children>
+            <TextArea fx:id="ta" prefHeight="621.0" prefWidth="451.0" style="-fx-background-color: #d6c3d5;" />
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onClickTotal" prefHeight="80.0" prefWidth="110.0" style="-fx-background-color: #9edce6;" text="Total">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickReceipt" prefHeight="80.0" prefWidth="111.0" style="-fx-background-color: #9ea9e6;" text="영수증">
+                     <font>
+                        <Font name="HYGraphic-Medium" size="19.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="62.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickReset" prefHeight="80.0" prefWidth="102.0" style="-fx-background-color: #e5e69e;" text="Reset">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="114.0" layoutY="10.0" mnemonicParsing="false" onAction="#onClickExit" prefHeight="80.0" prefWidth="100.0" style="-fx-background-color: #e683b3;" text="Back" textFill="#eff2e3">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </HBox>
+         </children></VBox>
+      <VBox layoutX="8.0" layoutY="598.0" prefHeight="200.0" prefWidth="526.0" style="-fx-border-color: green; -fx-background-color: #c0d4f0;">
+         <children>
+            <GridPane prefHeight="204.0" prefWidth="381.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="231.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="167.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="커피음료 합계">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="29.0" text="케익 합계" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="95.0" text="봉사료" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_t1" GridPane.columnIndex="1" />
+                  <TextField fx:id="txt_t2" layoutX="241.0" layoutY="32.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txt_t3" layoutX="241.0" layoutY="32.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </GridPane>
+         </children></VBox>
+      <VBox layoutX="541.0" layoutY="598.0" prefHeight="200.0" prefWidth="473.0" style="-fx-border-color: green; -fx-background-color: #b7bec7;">
+         <children>
+            <GridPane prefHeight="204.0" prefWidth="381.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="231.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="167.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="세금">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="29.0" text="중간 합계" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="10.0" layoutY="95.0" text="총 금액" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txt_t4" GridPane.columnIndex="1" />
+                  <TextField fx:id="txt_t5" layoutX="241.0" layoutY="32.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txt_t6" layoutX="241.0" layoutY="32.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </GridPane>
+         </children></VBox>
+   </children>
+</AnchorPane>

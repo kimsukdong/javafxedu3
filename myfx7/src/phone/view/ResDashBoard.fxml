@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phone.controller.DashBoardController">
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="lbl_username" layoutX="67.0" layoutY="498.0" text="***" />
+            <StackPane layoutX="6.0" layoutY="14.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="134.0" fitWidth="223.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/20170306-fast-pasta-recipes-roundup-01-1500x1125.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: rgbs(0.0,0.0,0.0,0.7);" text="Label" textFill="#f2efef" StackPane.alignment="BOTTOM_LEFT" />
+                  <Label layoutX="10.0" layoutY="140.0" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: rgbs(155.0,1300.0,0.0,0.7);" text="Spice Noodle" textFill="#f24949" StackPane.alignment="TOP_LEFT" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="247.0" layoutY="13.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: rgbs(0.0,0.0,0.0,0.7);" text="Label" textFill="#f2efef" StackPane.alignment="BOTTOM_LEFT" />
+                  <Label layoutX="10.0" layoutY="140.0" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: rgbs(155.0,1300.0,0.0,0.7);" text="Spice Noodle" textFill="#f24949" StackPane.alignment="TOP_LEFT" />
+                  <ImageView fitHeight="134.0" fitWidth="223.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Pasta-HD.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <StackPane layoutX="498.0" layoutY="13.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: rgbs(0.0,0.0,0.0,0.7);" text="Label" textFill="#f2efef" StackPane.alignment="BOTTOM_LEFT" />
+                  <Label layoutX="10.0" layoutY="140.0" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: rgbs(155.0,1300.0,0.0,0.7);" text="Spice Noodle" textFill="#f24949" StackPane.alignment="TOP_LEFT" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/Pasta-Pictures-HD-8.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <Label layoutX="498.0" layoutY="13.0" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: rgbs(0.0,0.0,0.0,0.7);" text="Label" textFill="#f2efef" />
+            <Label layoutX="498.0" layoutY="13.0" prefHeight="20.0" prefWidth="200.0" style="-fx-background-color: rgbs(155.0,1300.0,0.0,0.7);" text="Spice Noodle" textFill="#f24949" />
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <VBox prefHeight="615.0" prefWidth="349.0" spacing="10.0" style="-fx-background-color: #ccc;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="59.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="253.0" layoutY="2.0" text="0.0" textFill="#1c2de8">
+                     <font>
+                        <Font size="46.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TableView prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Description" />
+                <TableColumn prefWidth="75.0" text="Price" />
+                  <TableColumn prefWidth="75.0" text="Order" />
+                  <TableColumn prefWidth="75.0" text="Total" />
+              </columns>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></VBox>
+   </right>
+   <bottom>
+      <HBox prefHeight="60.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #ccc;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #e1b12c;" text="[F1. New Order]" textFill="#fcfcfc" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="20.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: cyan;" text="[F2.Payment]" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="189.0" layoutY="20.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: cyan;" text="[F3.Cancel Order]" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="189.0" layoutY="20.0" mnemonicParsing="false" onAction="#manageProducts" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: cyan;" text="[F4.Manage Product]" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="189.0" layoutY="20.0" mnemonicParsing="false" onAction="#manageTable" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: cyan;" text="[F5.Manage Table]" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="189.0" layoutY="20.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: cyan;" text="[F6.Sales Report]" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="189.0" layoutY="20.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #c23616;" text="[F7.logout]" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="865.0" layoutY="20.0" mnemonicParsing="false" onAction="#onClickBack" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: #e1b12c;" text="Back" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox prefHeight="615.0" prefWidth="187.0" spacing="10.0" style="-fx-background-color: #ccc;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="59.0" prefWidth="200.0" />
+            <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="159.0" style="-fx-background-color: cyan;" text="Deserts" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="89.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="159.0" style="-fx-background-color: cyan;" text="Drink" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="131.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="159.0" style="-fx-background-color: cyan;" text="Snakes" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="20.0" layoutY="173.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="159.0" style="-fx-background-color: cyan;" text="Meal" textFill="#fcfcfc">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding></VBox>
+   </left>
+</BorderPane>

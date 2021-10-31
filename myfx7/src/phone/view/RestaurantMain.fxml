@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #aec8f2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phone.controller.RestaurantMainController">
+   <children>
+      <Button layoutX="364.0" layoutY="281.0" mnemonicParsing="false" onAction="#onClickLogin" prefHeight="23.0" prefWidth="102.0" style="-fx-background-radius: 10; -fx-background-color: brown;" text="Login" textFill="#c9cdbe">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <TextField fx:id="txt_username" layoutX="342.0" layoutY="179.0" prefHeight="23.0" prefWidth="215.0" style="-fx-background-radius: 10;" />
+      <PasswordField fx:id="txt_password" layoutX="342.0" layoutY="220.0" prefHeight="23.0" prefWidth="215.0" style="-fx-background-radius: 10;" />
+      <Label layoutX="243.0" layoutY="179.0" text="Username">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="246.0" layoutY="220.0" text="Password">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="392.0" layoutY="125.0" text="Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="194.0" layoutY="51.0" text="Restaurant Management" textFill="#c32f34">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

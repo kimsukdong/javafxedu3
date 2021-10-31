@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="540.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phone.controller.BusUpdateController">
+   <children>
+      <Label layoutX="61.0" layoutY="28.0" text="수정할 날짜 선택 : " />
+      <TableView fx:id="tableContent" layoutX="31.0" layoutY="129.0" onMouseClicked="#onMouseClicked" prefHeight="402.0" prefWidth="755.0">
+        <columns>
+          <TableColumn fx:id="col_name" prefWidth="156.0" text="Name" />
+          <TableColumn fx:id="col_seat" prefWidth="128.0" text="Seatno" />
+            <TableColumn fx:id="col_price" prefWidth="154.0" text="price" />
+            <TableColumn fx:id="col_date" prefWidth="232.0" text="date" />
+        </columns>
+      </TableView>
+      <Button layoutX="409.0" layoutY="25.0" mnemonicParsing="false" onAction="#onClickSearch" text="확인" />
+      <DatePicker fx:id="txtdate" layoutX="172.0" layoutY="24.0" prefHeight="23.0" prefWidth="194.0" />
+      <Button layoutX="655.0" layoutY="24.0" mnemonicParsing="false" onAction="#onClickBack" text="Back" />
+      <Separator layoutX="32.0" layoutY="109.0" prefHeight="14.0" prefWidth="755.0" />
+      <Button layoutX="492.0" layoutY="25.0" mnemonicParsing="false" onAction="#onClickUpdate" text="수정" />
+      <Button layoutX="577.0" layoutY="24.0" mnemonicParsing="false" onAction="#onClickDelete" text="삭제" />
+      <HBox layoutX="33.0" layoutY="84.0" prefHeight="33.0" prefWidth="755.0" spacing="10.0">
+         <children>
+            <TextField fx:id="txt_name" prefHeight="22.0" prefWidth="150.0" />
+            <TextField fx:id="txt_seat" prefHeight="22.0" prefWidth="115.0" />
+            <TextField fx:id="txt_price" prefHeight="22.0" prefWidth="147.0" />
+            <TextField fx:id="txt_date" prefHeight="22.0" prefWidth="291.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="33.0" layoutY="60.0" prefHeight="32.0" prefWidth="767.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="14.0" prefWidth="131.0" text="Name" />
+            <Label alignment="CENTER" prefHeight="14.0" prefWidth="129.0" text="좌석번호" />
+            <Label alignment="CENTER" prefHeight="14.0" prefWidth="147.0" text="Price" />
+            <Label alignment="CENTER" prefHeight="14.0" prefWidth="293.0" text="승차 날짜" />
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <Separator layoutX="32.0" layoutY="48.0" prefHeight="14.0" prefWidth="755.0" />
+   </children>
+</AnchorPane>

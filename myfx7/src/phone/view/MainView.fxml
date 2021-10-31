@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phone.controller.MainViewController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="43.0" prefWidth="800.0" spacing="30.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onClickHome" text="Home" />
+            <Button mnemonicParsing="false" onAction="#onClickStop" text="Stop" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <MenuBar prefHeight="34.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onClickClose" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#onClickgohome" text="GoHome" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+                  <Menu mnemonicParsing="false" text="Address">
+                    <items>
+                    <MenuItem mnemonicParsing="false" onAction="#onClickOne" text="One Disply" />
+                        <MenuItem mnemonicParsing="false" onAction="#onClickSep" text="Seperate Dis" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#onClickCafe" text="Cafe" />
+                  <MenuItem mnemonicParsing="false" onAction="#onClickBus" text="BusStop" />
+                  <MenuItem mnemonicParsing="false" onAction="#onClickPizza" text="Pizza" />
+                  <MenuItem mnemonicParsing="false" onAction="#obClickRestaurant" text="Restaurant" />
+                   <MenuItem mnemonicParsing="false" onAction="#onClickEmployee" text="Employee" />
+                  <MenuItem mnemonicParsing="false" onAction="#onClickHome" text="Home" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onClickHelp" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

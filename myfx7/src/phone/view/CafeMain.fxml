@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="467.0" prefWidth="794.0" style="-fx-background-color: #aec8f2;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phone.controller.CafeMainController">
+   <children>
+      <HBox alignment="CENTER" layoutX="-6.0" layoutY="-6.0" prefHeight="98.0" prefWidth="800.0" style="-fx-background-color: #f041ed;">
+         <children>
+            <Label text="Cafe 관리 시스템" textFill="#3725c2">
+               <font>
+                  <Font name="System Bold" size="58.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox fx:id="logo" alignment="CENTER" layoutY="92.0" prefHeight="366.0" prefWidth="300.0" spacing="50.0" style="-fx-background-color: #4287f5;">
+         <children>
+            <ImageView fitHeight="196.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/OIP.jpg" />
+               </image>
+            </ImageView>
+            <Label text="Always Frsh" textFill="#c93374">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="loginpane" layoutX="394.0" layoutY="105.0" prefHeight="143.0" prefWidth="201.0">
+         <children>
+            <TextField fx:id="txt_username" layoutX="10.0" prefHeight="22.0" prefWidth="180.0" promptText="Enter Email" />
+            <Button layoutX="108.0" layoutY="77.0" mnemonicParsing="false" onAction="#onClickLogin" prefHeight="22.0" prefWidth="83.0" style="-fx-background-color: blue;" text="Login" textFill="#f5eded" />
+            <Button layoutX="10.0" layoutY="147.0" mnemonicParsing="false" onAction="#onClickSignup" prefWidth="180.0" text="Sign up" />
+            <PasswordField fx:id="txt_password" layoutX="10.0" layoutY="36.0" prefWidth="180.0" promptText="Enter Password" />
+            <Separator layoutY="104.0" prefHeight="43.0" prefWidth="200.0" />
+            <ComboBox fx:id="comboType" layoutX="8.0" layoutY="77.0" onAction="#onClickType" prefHeight="22.0" prefWidth="89.0" promptText="직책" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="359.0" layoutY="355.0" mnemonicParsing="false" onAction="#onClickOrder" prefHeight="98.0" prefWidth="129.0" style="-fx-background-color: #e6a4ed; -fx-background-radius: 20;" text="주문 화면">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="537.0" layoutY="355.0" mnemonicParsing="false" onAction="#onClickStatistic" prefHeight="98.0" prefWidth="129.0" style="-fx-background-color: #5bcad9; -fx-background-radius: 20;" text="통계 화면">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="lblpane" disable="true" layoutX="395.0" layoutY="100.0" prefHeight="181.0" prefWidth="200.0" visible="false">
+         <children>
+            <Label fx:id="lbl_welcome" layoutX="23.0" layoutY="62.0" text="Label" textFill="#ee0043">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="405.0" layoutY="298.0" mnemonicParsing="false" onAction="#onClickLogout" prefHeight="22.0" prefWidth="180.0" text="Logout" />
+   </children>
+</AnchorPane>
