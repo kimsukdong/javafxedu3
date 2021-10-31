@@ -1,5 +1,7 @@
 package application;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -63,6 +65,15 @@ public class MainViewController {
 		}
     }
     
+    @FXML
+    void onClickTotal(ActionEvent event) throws IOException {
+		root = FXMLLoader.load(getClass().getResource("Total.fxml"));
+		scene = new Scene(root,800,600);
+		Main.primaryStage.setScene(scene);
+		Main.primaryStage.show();
+		Main.primaryStage.setTitle("Manage");
+    }
+
     @FXML
     void onClickBack(ActionEvent event) {
     	main.showMainView();

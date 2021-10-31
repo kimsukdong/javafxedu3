@@ -25,7 +25,6 @@ public class SampleController {
 	AnchorPane root;
 	Scene scene;
 
-
 	@FXML
 	private Button btn_Manager;
 
@@ -70,7 +69,7 @@ public class SampleController {
 	}
 
 	@FXML
-	void onClickLogin(ActionEvent event) throws IOException, InterruptedException {  	
+	void onClickLogin(ActionEvent event) throws IOException {  	
 		String uname = tf1.getText();
 		String pass = tf2.getText();
 

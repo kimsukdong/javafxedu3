@@ -9,12 +9,12 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" style="-fx-background-color: #f2d583;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainViewController">
    <children>
-      <Label layoutX="200.0" layoutY="139.0" text="using Student Table" textFill="#848d0a">
+      <Label layoutX="200.0" layoutY="111.0" text="using Student Table" textFill="#848d0a">
          <font>
             <Font name="System Bold" size="25.0" />
          </font>
       </Label>
-      <HBox layoutX="21.0" layoutY="242.0" prefHeight="68.0" prefWidth="574.0" spacing="30.0">
+      <HBox alignment="CENTER" layoutX="22.0" layoutY="200.0" prefHeight="70.0" prefWidth="600.0" spacing="30.0">
          <children>
             <Button mnemonicParsing="false" onAction="#onClickAdd" prefHeight="60.0" prefWidth="106.0" style="-fx-background-color: #f2bbef;" text="추가">
                <font>
@@ -36,20 +36,35 @@
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onAction="#onClickBack" prefHeight="60.0" prefWidth="106.0" style="-fx-background-color: #998b8e;" text="Back">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Button>
          </children>
          <padding>
             <Insets left="10.0" right="10.0" />
          </padding>
       </HBox>
-      <Label layoutX="244.0" layoutY="71.0" text="주소록" textFill="#0a4780">
+      <Label layoutX="244.0" layoutY="43.0" text="주소록" textFill="#0a4780">
          <font>
             <Font name="HYHeadLine-Medium" size="43.0" />
          </font>
       </Label>
+      <HBox alignment="CENTER" layoutX="25.0" layoutY="286.0" prefHeight="80.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onClickTotal" prefHeight="60.0" prefWidth="105.0" style="-fx-background-color: cyan;" text="1 Page">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onClickBack" prefHeight="60.0" prefWidth="106.0" style="-fx-background-color: #998bee;" text="Back">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>
