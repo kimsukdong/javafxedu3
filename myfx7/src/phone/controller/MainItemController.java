@@ -280,41 +280,4 @@ public class MainItemController {
 		}
 	}
 
-
-	@FXML
-	void onClickRestaurant(MouseEvent event) {
-		if(Main.login.equals("ON"))
-			try {
-				root = FXMLLoader.load(getClass().getResource("/phone/view/RestaurantMain.fxml"));
-				Main.mainLayout.setCenter(root);
-				Main.setPrimaryStage("侥寸 包府");
-			} catch(Exception e) {
-				e.printStackTrace();
-			}
-		else
-		{
-			owner = txt_username.getScene().getWindow();
-			showAlert(Alert.AlertType.ERROR,owner,"First, You must do login", "Form error!");
-			return;
-		}
-	}
-
-	@FXML
-	void onClickEmployee(MouseEvent event) {
-		if(Main.login.equals("ON"))
-			try {
-				root = FXMLLoader.load(getClass().getResource("/phone/view/EmployeeMain.fxml"));
-				Main.mainLayout.setCenter(root);
-				Main.setPrimaryStage("绊侩 包府");
-			} catch(Exception e) {
-				e.printStackTrace();
-			}
-		else
-		{
-			owner = txt_username.getScene().getWindow();
-			showAlert(Alert.AlertType.ERROR,owner,"First, You must do login", "Form error!");
-			return;
-		}
-	}
-
 }

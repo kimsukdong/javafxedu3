@@ -92,38 +92,6 @@ public class MainViewController {
 	}
 
 	@FXML
-	void obClickRestaurant(ActionEvent event) {
-		if(Main.login.equals("ON")) {
-			main.showMainView();
-			try {
-				root = FXMLLoader.load(getClass().getResource("/phone/view/RestaurantMain.fxml"));
-				Main.mainLayout.setCenter(root);
-				Main.setPrimaryStage("侥寸 包府");
-			} catch(Exception e) {
-				e.printStackTrace();
-			}
-		}else {
-			JOptionPane.showMessageDialog(null, "First, You must do login !");
-		}
-	}
-
-	@FXML
-	void onClickEmployee(ActionEvent event) {
-		if(Main.login.equals("ON")) {
-			main.showMainView();
-			try {
-				root = FXMLLoader.load(getClass().getResource("/phone/view/EmployeeMain.fxml"));
-				Main.mainLayout.setCenter(root);
-				Main.setPrimaryStage("绊侩 包府");
-			} catch(Exception e) {
-				e.printStackTrace();
-			}
-		}else {
-			JOptionPane.showMessageDialog(null, "First, You must do login !");
-		}
-	}
-
-	@FXML
 	void onClickClose(ActionEvent event) {
 		System.exit(0);
 	}

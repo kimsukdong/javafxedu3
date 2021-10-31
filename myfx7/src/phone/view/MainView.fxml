@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phone.controller.MainViewController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phone.controller.MainViewController">
    <bottom>
       <HBox alignment="CENTER" prefHeight="43.0" prefWidth="800.0" spacing="30.0" BorderPane.alignment="CENTER">
          <children>
@@ -36,8 +36,6 @@
                   <MenuItem mnemonicParsing="false" onAction="#onClickCafe" text="Cafe" />
                   <MenuItem mnemonicParsing="false" onAction="#onClickBus" text="BusStop" />
                   <MenuItem mnemonicParsing="false" onAction="#onClickPizza" text="Pizza" />
-                  <MenuItem mnemonicParsing="false" onAction="#obClickRestaurant" text="Restaurant" />
-                   <MenuItem mnemonicParsing="false" onAction="#onClickEmployee" text="Employee" />
                   <MenuItem mnemonicParsing="false" onAction="#onClickHome" text="Home" />
             </items>
           </Menu>

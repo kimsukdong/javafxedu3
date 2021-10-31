@@ -12,6 +12,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
@@ -111,11 +112,12 @@ public class CafeMainController {
 
 	@FXML
 	void onClickOrder(ActionEvent event) throws IOException {
-		if(Main.sw.equals("on") && ((Main.position.equals("판매담당"))||(Main.position.equals("임원")))) {
-
+		if(Main.sw.equals("on") && ((Main.position.equals("판매담당"))||(Main.position.equals("임원")))) {				
 			AnchorPane root = FXMLLoader.load(getClass().getResource("/phone/view/CafeMenu.fxml"));
-			Main.mainLayout.setCenter(root);
-			Main.setPrimaryStage("주문 화면");
+			Scene scene = new Scene(root,1500,1000);
+			Main.primaryStage.setScene(scene);
+			Main.primaryStage.show();
+			Main.primaryStage.setTitle("주문 화면");
 		} 
 		else
 		{
@@ -127,11 +129,14 @@ public class CafeMainController {
 
 	@FXML
 	void onClickStatistic(ActionEvent event) throws IOException {
-		if(Main.sw.equals("on") && ((Main.position.equals("관리자"))||(Main.position.equals("임원")))) {
-
+		if(Main.sw.equals("on") && ((Main.position.equals("관리자"))||(Main.position.equals("임원")))) {		
 			AnchorPane root = FXMLLoader.load(getClass().getResource("/phone/view/CafeView.fxml"));
-			Main.mainLayout.setCenter(root);
-			Main.setPrimaryStage("통계 화면");
+			Scene scene = new Scene(root,1500,1000);
+			Main.primaryStage.setScene(scene);
+			Main.primaryStage.show();
+			Main.primaryStage.setTitle("통계 화면");
+			
+			
 		} 
 		else
 		{

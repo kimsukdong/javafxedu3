@@ -12,7 +12,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-	private static Stage primaryStage;
+	public static Stage primaryStage;
 	public static Stage stage;
 	public static BorderPane mainLayout;
 	
@@ -44,7 +44,7 @@ public class Main extends Application {
 	public void showMainView() {
 		try {
 			mainLayout = FXMLLoader.load(getClass().getResource("view/MainView.fxml"));
-			Scene scene = new Scene(mainLayout,1500,1000);
+			Scene scene = new Scene(mainLayout,1000,700);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.setTitle("통합관리");
@@ -78,20 +78,6 @@ public class Main extends Application {
 
 	}	
 	
-	public static void showEmployeeAddStage() throws IOException {
-		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(Main.class.getResource("view/AddNewEmployee.fxml"));
-		BorderPane addNewEmployee = loader.load();
-		
-		Stage stage = new Stage();
-		stage.setTitle("Add New Employee");
-		stage.initModality(Modality.WINDOW_MODAL);
-		stage.initOwner(primaryStage);
-		Scene scene = new Scene(addNewEmployee);
-		stage.setScene(scene);
-		stage.showAndWait();
-	
-	}
 	
 	public void stopMainView() {
 		primaryStage.close();
