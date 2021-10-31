@@ -24,18 +24,23 @@ public class SampleController {
 
 	AnchorPane root;
 	Scene scene;
+	
+	String uname, pass;
+	Main main = new Main();
 
 	@FXML
 	private Button btn_Manager;
 
 	@FXML
-	private TextField tf1;
+	public TextField tf1;
 
 	@FXML
-	private TextField tf2;
+	public TextField tf2;
 
 	@FXML
 	private void initialize() {
+		tf1.setText(main.uname);
+		tf2.setText(main.upass);
 		conn = mysqlconnect.ConnectDb();
 		try {
 			pst = conn.prepareStatement("select * from user where name =? and password=?");
@@ -47,7 +52,9 @@ public class SampleController {
 
 	@FXML
 	void onClickCancel(ActionEvent event) {
-		System.exit(0);
+		int dialogresult = JOptionPane.showConfirmDialog(null, "Do you want to finish this job?");
+		if(dialogresult == JOptionPane.YES_NO_OPTION)
+			System.exit(0);
 	} 
 
 	@FXML
@@ -70,8 +77,8 @@ public class SampleController {
 
 	@FXML
 	void onClickLogin(ActionEvent event) throws IOException {  	
-		String uname = tf1.getText();
-		String pass = tf2.getText();
+		uname = tf1.getText();
+		pass = tf2.getText();
 
 
 		if(uname.equals("") && pass.equals(""))
@@ -88,11 +95,12 @@ public class SampleController {
 					if(uname.equals("admin")) {
 						btn_Manager.setDisable(false);
 					} else {
+						main.set_txt(uname, pass);
 						root = FXMLLoader.load(getClass().getResource("MainView.fxml"));
 						scene = new Scene(root,600,400);
 						Main.primaryStage.setScene(scene);
 						Main.primaryStage.show();
-						Main.primaryStage.setTitle("Data Processing . . .");  
+						Main.primaryStage.setTitle("Data Processing . . .");  						
 					}
 				} else
 				{

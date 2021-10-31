@@ -13,6 +13,12 @@ public class MainViewController {
 	AnchorPane root;
 	Scene scene;
 	Main main = new Main();
+	String uname, upass;
+	
+	public void setname(String uname, String upass) {
+		this.uname = uname;
+		this.upass = upass;
+	}
     @FXML
     void onClickAdd(ActionEvent event) {
 		try {
@@ -76,6 +82,7 @@ public class MainViewController {
 
     @FXML
     void onClickBack(ActionEvent event) {
+    	main.set_txt(uname,upass);
     	main.showMainView();
     }
 

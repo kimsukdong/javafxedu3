@@ -81,7 +81,9 @@ public class DeleteController {
 
 	@FXML
 	void onClickStop(ActionEvent event) {
-		System.exit(0);
+		int dialogresult = JOptionPane.showConfirmDialog(null, "Do you want to finish this job?");
+		if(dialogresult == JOptionPane.YES_NO_OPTION)
+			System.exit(0);
 	}
 
 	@FXML

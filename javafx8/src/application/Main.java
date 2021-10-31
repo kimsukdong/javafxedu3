@@ -9,6 +9,12 @@ import javafx.fxml.FXMLLoader;
 
 public class Main extends Application {
 	public static Stage primaryStage;
+	String uname="", upass="";
+	
+	public void set_txt(String uname, String upass) {
+		this.uname=uname;
+		this.upass=upass;
+	}
 	
 	@Override
 	public void start(Stage primaryStage) {
