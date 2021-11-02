@@ -41,17 +41,34 @@ public class SampleController {
     }  
 
     public void calculate (long n1, long n2, String op){
-    
+    	long n3;
+    	String str;
         switch (op){
         
-            case "+" : txt_result.setText(n1 + n2 + "");break;
-            case "-" : txt_result.setText(n1 - n2 + "");break;
-            case "*" : txt_result.setText(n1 * n2 + "");break;
+            case "+" : 
+            	n3 = n1+n2;
+            	str = String.format("%,d", n3);
+            	txt_result.setText(str);
+            	break;
+            case "-" :
+            	n3 = n1-n2;
+            	str = String.format("%,d", n3);
+            	txt_result.setText(str);
+            	break;
+            case "*" : 
+            	n3 = n1*n2;
+            	str = String.format("%,d", n3);
+            	txt_result.setText(str);
+            	break;
             case "/" : 
                 if (n2 == 0){
-                txt_result.setText("0");break;
+                txt_result.setText("ERROR!!!");
+                break;
                 }
-                txt_result.setText(n1/n2+ "");break;    
+            	double n4 = (double)n1/n2;
+            	str = String.format("%,f", n4);
+            	txt_result.setText(str);
+                break;    
         }
     }
     
