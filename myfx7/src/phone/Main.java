@@ -6,6 +6,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
@@ -32,7 +33,8 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Main.primaryStage = primaryStage;						
-			
+	//		Image Icon = new Image("images/hoseo.jpg");
+	//		primaryStage.getIcons().add(Icon);
 			showMainView();		
 			showMainItems();
 			

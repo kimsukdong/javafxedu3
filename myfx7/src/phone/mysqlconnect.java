@@ -15,8 +15,8 @@ public class mysqlconnect {
 	public static Connection ConnectDb() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/sampledb?serverTimezone=UTC", "root","brd901as-kim");
-	//		JOptionPane.showMessageDialog(null, "Connection Established !!!");
+//			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/sampledb?serverTimezone=UTC", "root","brd901as-kim");
+			conn = DriverManager.getConnection("jdbc:mysql://db4free.net:3306/sampledb2?serverTimezone=UTC", "sukdongkim","brd901as-kim");
 			return conn;
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, e);
