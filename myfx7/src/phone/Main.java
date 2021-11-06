@@ -1,6 +1,8 @@
 package phone;
 	
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -33,8 +35,9 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Main.primaryStage = primaryStage;						
-	//		Image Icon = new Image("images/hoseo.jpg");
-	//		primaryStage.getIcons().add(Icon);
+			InputStream stream = new FileInputStream("c:/util/hoseo.jpg");
+			Image image = new Image(stream);
+			primaryStage.getIcons().add(image);
 			showMainView();		
 			showMainItems();
 			
