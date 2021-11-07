@@ -93,6 +93,7 @@ public class SampleController {
 				srs = pst.executeQuery();
 				if(srs.next()) {
 					if(uname.equals("admin")) {
+						btn_Manager.setVisible(true);
 						btn_Manager.setDisable(false);
 					} else {
 						main.set_txt(uname, pass);

@@ -111,20 +111,20 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="50.0" prefWidth="388.0" style="-fx-background-color: #3a3b20;">
                <children>
-                  <Button fx:id="btn_Manager" disable="true" mnemonicParsing="false" onAction="#onClickManage" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: lightgreen;" text="Manage">
+                  <Button mnemonicParsing="false" onAction="#onClickCancel" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: yellow;" text="종료">
                      <HBox.margin>
                         <Insets right="20.0" />
                      </HBox.margin>
                      <font>
-                        <Font size="14.0" />
+                        <Font name="System Bold" size="15.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#onClickCancel" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: yellow;" text="종료">
+                  <Button fx:id="btn_Manager" disable="true" mnemonicParsing="false" onAction="#onClickManage" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: lightgreen;" text="Manage" visible="false">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
                      <font>
-                        <Font name="System Bold" size="15.0" />
+                        <Font size="14.0" />
                      </font>
                   </Button>
                </children>

@@ -27,7 +27,7 @@ public class SampleController {
 	private void initialize() {
 		conn = mysqlconnect.ConnectDb();
 		try {
-			pst = conn.prepareStatement("select * from users where name =? and password=?");
+			pst = conn.prepareStatement("select * from user where name =? and password=?");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

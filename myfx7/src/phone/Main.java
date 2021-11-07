@@ -35,8 +35,9 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Main.primaryStage = primaryStage;						
-			InputStream stream = new FileInputStream("c:/util/hoseo.jpg");
-			Image image = new Image(stream);
+//			InputStream stream = new FileInputStream("c:/util/hoseo.jpg");
+//			Image image = new Image(stream);
+			Image image = new Image("http://www.hoseo.ac.kr/resources/images/korean/sub/info/info04tab_sym_02.png");
 			primaryStage.getIcons().add(image);
 			showMainView();		
 			showMainItems();

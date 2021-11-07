@@ -73,7 +73,7 @@ public class ManageController {
 	public void tablelookup() {
 		try {
 			stmt = conn.createStatement();
-			srs = stmt.executeQuery("select * from users");
+			srs = stmt.executeQuery("select * from user");
 
 			list = FXCollections.observableArrayList();
 			while(srs.next()) {
@@ -110,7 +110,7 @@ public class ManageController {
 		String r4 = txtphone.getText();
 
 		try {
-			pst = conn.prepareStatement("insert into users (name, password, email, phone) values (?,?,?,?)");
+			pst = conn.prepareStatement("insert into user (name, password, email, phone) values (?,?,?,?)");
 			pst.setString(1, r1);
 			pst.setString(2, r2);
 			pst.setString(3, r3);
@@ -151,7 +151,7 @@ public class ManageController {
 		if(dialogresult == JOptionPane.YES_NO_OPTION)
 		{
 			try {
-				pst = conn.prepareStatement("delete from users where name = ?");
+				pst = conn.prepareStatement("delete from user where name = ?");
 				pst.setString(1, index);
 				pst.executeUpdate();
 				JOptionPane.showMessageDialog(null, "User Delete!");
@@ -179,7 +179,7 @@ public class ManageController {
 		String r4 = txtphone.getText();
 
 		try {
-			pst = conn.prepareStatement("update users set password= ?, email=?,phone=? where name = ?");
+			pst = conn.prepareStatement("update user set password= ?, email=?,phone=? where name = ?");
 			pst.setString(1, r2);
 			pst.setString(2, r3);
 			pst.setString(3, r4);

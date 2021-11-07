@@ -17,11 +17,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="580.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phone.controller.PizzaMenuController">
+<AnchorPane prefHeight="570.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phone.controller.PizzaMenuController">
    <children>
       <AnchorPane layoutX="510.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="490.0" style="-fx-border-color: green; -fx-border-width: 3; -fx-background-color: #e3c062;">
          <children>
-            <VBox layoutX="20.0" layoutY="20.0" prefHeight="838.0" prefWidth="452.0" spacing="5.0">
+            <VBox layoutX="20.0" layoutY="20.0" prefHeight="570.0" prefWidth="452.0" spacing="5.0">
                <children>
                   <Label text="어떤피자를 주문하시겠습니까?" textFill="#343497">
                      <VBox.margin>
@@ -143,7 +143,7 @@
             </VBox>
          </children>
       </AnchorPane>
-      <AnchorPane layoutY="14.0" prefHeight="580.0" prefWidth="503.0" style="-fx-border-color: green; -fx-border-width: 3; -fx-background-color: #e3c062;">
+      <AnchorPane layoutY="14.0" prefHeight="640.0" prefWidth="514.0" style="-fx-border-color: green; -fx-border-width: 3; -fx-background-color: #e3c062;">
          <children>
             <Label layoutX="214.0" layoutY="31.0" text="고객정보" textFill="#666df2">
                <font>
@@ -200,12 +200,12 @@
             </Label>
             <TableView fx:id="tableContent" layoutX="7.0" layoutY="241.0" prefHeight="393.0" prefWidth="501.0">
               <columns>
-                <TableColumn fx:id="col_date" prefWidth="56.0" text="날짜" />
-                <TableColumn fx:id="col_pizza" prefWidth="121.0" text="피자종류" />
-                  <TableColumn fx:id="col_size" prefWidth="102.0" text="피자크기" />
-                  <TableColumn fx:id="col_1" prefWidth="64.0" text="치즈 " />
-                  <TableColumn fx:id="col_2" prefWidth="63.0" text="피클" />
-                  <TableColumn fx:id="col_3" prefWidth="59.0" text="콜라" />
+                <TableColumn fx:id="col_date" prefWidth="83.0" text="날짜" />
+                <TableColumn fx:id="col_pizza" prefWidth="169.0" text="피자종류" />
+                  <TableColumn fx:id="col_size" prefWidth="145.0" text="피자크기" />
+                  <TableColumn fx:id="col_1" prefWidth="33.0" text="치즈 " />
+                  <TableColumn fx:id="col_2" prefWidth="32.0" text="피클" />
+                  <TableColumn fx:id="col_3" prefWidth="38.0" text="콜라" />
               </columns>
             </TableView>
          </children>

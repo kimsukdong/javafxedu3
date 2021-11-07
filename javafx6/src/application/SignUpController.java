@@ -50,7 +50,7 @@ public class SignUpController {
     	String uphone = tf4.getText();
 
 		try {
-			pst = conn.prepareStatement("insert into users (name,password, email, phone) values (?,?,?,?)");
+			pst = conn.prepareStatement("insert into user (name,password, email, phone) values (?,?,?,?)");
 			pst.setString(1, uname);
 			pst.setString(2, upass);
 			pst.setString(3, uemail);
